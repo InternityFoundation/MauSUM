@@ -1,0 +1,42 @@
+{
+    "coord": {
+        "lon": 73.86,
+        "lat": 18.52
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01n"
+        }
+    ],
+    "base": "model",
+    "main": {
+        "temp": 295.44,
+        "feels_like": 293.51,
+        "temp_min": 295.44,
+        "temp_max": 295.44,
+        "pressure": 1013,
+        "humidity": 43,
+        "sea_level": 1013,
+        "grnd_level": 941
+    },
+    "wind": {
+        "speed": 2.48,
+        "deg": 283
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1581792861,
+    "sys": {
+        "country": "IN",
+        "sunrise": 1581816742,
+        "sunset": 1581858315
+    },
+    "timezone": 19800,
+    "id": 1259229,
+    "name": "Pune",
+    "cod": 200
+}
