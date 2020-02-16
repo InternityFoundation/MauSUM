@@ -1,0 +1,84 @@
+<!--
+    Author: W3layouts
+    Author URL: http://w3layouts.com
+    License: Creative Commons Attribution 3.0 Unported
+    License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<div class="row" style="margin:10px">
+    <div class="col-md-offset-9 col-md-3">  
+        <select [(ngModel)]="selectedCity" class="form-control" (change)="cityChange()">
+            <option value="" hidden>Select City</option>
+            <option *ngFor="let city of CITIES" [ngValue]="city"> {{ city.city }}</option>
+        </select>
+    </div>
+</div>
+<!-- Heading -->
+<h1>MauSUM</h1>
+<!-- //Headng -->
+
+
+
+    <!-- Container -->
+    <div class="container">
+
+        <!-- City -->
+        <div class="city">
+            <div class="title">
+                <h2>{{ selectedCity.city }}</h2>
+                <h3>{{ selectedCity.admin }}</h3>
+            </div>
+            <div class="date-time">
+                <div class="dmy">
+                    <div id="txt"></div>
+                    <div class="date">
+                        {{ currentDateTime | date:'MMMM d, y':'+0530' }}
+                        <!-- //Date-JavaScript -->
+                    </div>
+                </div>
+                <div class="temperature" *ngIf="data">
+                    <p title="temperature">T : <b class="enlarge">{{ data.temperature | tempConv : 'C' }}</b></p>
+                    <p title="pressure">P : <b class="enlarge">{{ data.pressure }}</b></p>
+                    <p title="humidity">H : <b class="enlarge">{{ data.humidity }}</b></p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!-- //City -->
+
+
+
+        <!-- Forecast -->
+        <div class="forecast" *ngIf="data">
+            <div class="forecast-icon">
+                <img src="http://openweathermap.org/img/wn/{{data.icon}}.png" alt="{{ data.condition }} Weather Icon">
+            </div>
+            <div class="today-weather">
+                <h3>{{ data.condition }}</h3>
+                <ul >
+                    <li>NOW<span>{{ data.temperature | tempConv : 'C' }}</span>
+                    <li *ngFor="let data of future">
+                        {{ data.time * 1000 | date:'MMM d'}} 
+                        <span> {{ data.temp }} °C</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- //Forecast -->
+        <div class="clear"></div>
+
+    </div>
+    <!-- //Container -->
+
+
+
+<!-- Footer -->
+<div class="footer">
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p> &copy; 2020 MauSUM| Design by <a href="http://w3layouts.com">W3layouts</a></p>
+    </div>
+    <!-- //Copyright -->
+
+</div>
+<!-- //Footer -->
