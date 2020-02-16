@@ -39,8 +39,4 @@ MauSUM - a weather application which aggregrates data from multiple sources and 
 - Caching of data
 - Google Maps Autocomplete place API
 - Data from more sources
-- Error handling, logging, docs
-
-## What I am taking with me from this hackathon 
-- Exploration of vast API sources available for each kind of stuff (DRY)
-- 
+- Error handling, logging, docs 
