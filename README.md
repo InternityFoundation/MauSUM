@@ -6,9 +6,9 @@ Amalgamation of Weather Forecast from multiple free public data streams & APIs (
 
 
 
-## What I have acheived in last 20 Hrs
+## What I have built
 
-MauSUM - a weather application which aggregrates data from multiple sources and gives most accurate weather data.
+MauSUM - a weather application which aggregrates data from multiple sources and gives most accurate weather data. It hits various external apis from a backend in Python/Flask, aggregates there data and generate final result as consumable REST API. Frontend built in Angular 7 access the API and displays result in intuitive manner.
 
 
 ## Technologies Used
@@ -16,6 +16,7 @@ MauSUM - a weather application which aggregrates data from multiple sources and 
 - Python Flask 
     - Hit various API through HTTP, requests module
     - Independent API
+
 - Angular 7
     - Async fetches data using obervable subscriber pattern
     - process & modification of data in UI
@@ -29,11 +30,14 @@ MauSUM - a weather application which aggregrates data from multiple sources and 
     - SimpleMaps : to get indian city coordinates
 
 
+## Challenges
+- Breaking down problem and decide MVP Feature (mentors helped to figure out MUST HAVE Feature)
+- Variation in format of different data sources (created custom weather class and SI Unit convertion function)
 
 ## Future Modification
 
-- Caching of data
-- Google Maps Autocomplete place API
-- Data from more sources
-- API Authentication
-- Error handling, logging, docs 
+- Caching of API responses
+- Integrating Google Maps Autocomplete place API
+- Weather data from more sources
+- API Authentication & Throttling
+- Error handling, logging & docs 
