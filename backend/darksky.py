@@ -28,6 +28,7 @@ def get_current_darksky(lat, lon):
         w_obj.set_future_data(future_data)
         return w_obj
     else:
+        print(response.text)
         print("FAILED")
 
 

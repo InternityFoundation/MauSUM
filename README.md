@@ -10,10 +10,6 @@ Amalgamation of Weather Forecast from multiple free public data streams & APIs (
 
 MauSUM - a weather application which aggregrates data from multiple sources and gives most accurate weather data.
 
-## Challenges
-- 
-
-
 
 ## Technologies Used
 
@@ -39,4 +35,5 @@ MauSUM - a weather application which aggregrates data from multiple sources and 
 - Caching of data
 - Google Maps Autocomplete place API
 - Data from more sources
+- API Authentication
 - Error handling, logging, docs 

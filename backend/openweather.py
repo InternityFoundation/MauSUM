@@ -15,7 +15,6 @@ def get_current_openweather(lat, lon):
     url = ENDPOINT + 'appid=' + api_key
     url += '&lat=' + lat
     url += '&lon=' + lon
-    print(url)
     response = requests.get(url)    
     if response.status_code == 200:
         data = json.loads(response.text)

@@ -36,7 +36,6 @@ def calculate_weather(weather_obj_list):
     con = ""
     future = []
     for weather in weather_obj_list:
-        print(weather)
         if weather is None:
             continue
         lat = weather.latitude
